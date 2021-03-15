@@ -1,4 +1,7 @@
 <app-navbar></app-navbar>
+<router-outlet></router-outlet>
+
+<!-- 
 
 <h1>Welcome to Angular</h1>
 
@@ -14,52 +17,55 @@
 
   <br />
   {{ getData() }}
-</div>
+</div> -->
 <!--
   Property Binding
 -->
 <!-- <img [src]="url"> -->
-<input class="form-control" [placeholder]="title" />
+<!-- <input class="form-control" [placeholder]="title" /> -->
 
 <!--
   Event Binding
 -->
-
+<!-- 
 <h1>{{ title }}</h1>
 
-<button class="btn btn-primary" (click)="changeData()">Click</button>
+<button class="btn btn-primary" (click)="changeData()">Click</button> -->
 
 <!--
 
   Two Way DataBinding
 
 -->
-<input class="form-control" [(ngModel)]="title" [placeholder]="title" />
+<!-- <input class="form-control" [(ngModel)]="title" [placeholder]="title" /> -->
 
 <!--<div class="jumbotron">Hello</div> -->
-
+<!-- 
 <basic></basic>
 
 <div *ngIf="isActive; else e">
   <h1>User is Active</h1>
-</div>
+</div> -->
 <!--
 
   #elseblock is known as Template Variable
 -->
-<ng-template #e>
+<!-- <ng-template #e>
   <h1>User is inActive</h1>
 </ng-template>
 
-<hr style="border: thin solid black" />
+<hr style="border: thin solid black" /> -->
 <!-- <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
-<table class="table">
+<!-- <table class="table">
   <tr>
     <th>Name</th>
     <th>Age</th>
     <th>Place</th>
   </tr>
-  <tr *ngFor="let student of students">
+  <tr
+    *ngFor="let student of students"
+    [ngStyle]="{ 'background-color': getColor(student.place) }"
+  >
     <td>{{ student.name }}</td>
     <td>{{ student.Age }}</td>
     <td>{{ student.place }}</td>
@@ -69,6 +75,10 @@
 <div [ngClass]="isSpecial ? 'special' : 'notSoSpecial'">
   <p>This is special Paragraph</p>
 </div>
+
+<div [ngStyle]="{ color: 'blue' }">
+  <p>This is inside another div</p>
+</div> -->
 
 <!-- 
 <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating>

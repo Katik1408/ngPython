@@ -23,6 +23,18 @@ export class AppComponent {
     this.title = 'New Title';
   }
 
+  getColor(place){
+    switch(place){
+        case 'Bangalore':
+          return '#2ecc71';
+        case 'Noida':
+          return '#2980b9';
+        case 'Delhi':
+          return '#e67e22';
+    }
+  }
+
+
   students = [
     {
       name: 'Rahul',

@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { RatingModule } from 'ngx-bootstrap/rating';
 import {MatButtonModule} from '@angular/material/button';
+import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import {MatButtonModule} from '@angular/material/button';
     NavbarComponent,
     BasicComponent,
     FirstComponent,
+    ReactiveformsComponent,
   ],
   imports: [
     BrowserModule,

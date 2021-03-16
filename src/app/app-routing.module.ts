@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BasicComponent } from './basic/basic.component';
 import { FirstComponent } from './first/first.component';
 import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
+import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 
 const routes: Routes = [
   {
@@ -10,13 +11,17 @@ const routes: Routes = [
     component: BasicComponent,
   },
   {
-    path:'first',
-    component:FirstComponent
+    path: 'first',
+    component: FirstComponent,
   },
   {
-    path:'reactive',
-    component:ReactiveformsComponent
-  }
+    path: 'reactive',
+    component: ReactiveformsComponent,
+  },
+  {
+    path: 'template',
+    component: TemplateDrivenComponent,
+  },
 ];
 
 @NgModule({

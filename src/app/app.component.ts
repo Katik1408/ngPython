@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Main Title';
   a: number = 5;
-  isActive = false;
+  isActive = true;
   max: number = 10;
   rate: number = 7;
   isReadonly: boolean = true;

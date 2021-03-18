@@ -13,6 +13,8 @@ import { RatingModule } from 'ngx-bootstrap/rating';
 import { MatButtonModule } from '@angular/material/button';
 import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
+import { BackgDirective } from 'src/app/cutomdirective/backg.directive';
+import { CustomIfDirective } from 'src/app/cutomdirective/customIf.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,8 @@ import { TemplateDrivenComponent } from './template-driven/template-driven.compo
     FirstComponent,
     ReactiveformsComponent,
     TemplateDrivenComponent,
+    BackgDirective,
+    CustomIfDirective,
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,15 @@ export class AppComponent {
   rate: number = 7;
   isReadonly: boolean = true;
   isSpecial = false;
+
+  dateValue = new Date();
+
+  student = {
+    name: 'Rahul',
+    Age: 25,
+    place: 'Bangalore',
+  };
+
   // url = 'assets\\images\\bike.jpg'
   getData() {
     return 'This is from function';
@@ -23,17 +32,16 @@ export class AppComponent {
     this.title = 'New Title';
   }
 
-  getColor(place){
-    switch(place){
-        case 'Bangalore':
-          return '#2ecc71';
-        case 'Noida':
-          return '#2980b9';
-        case 'Delhi':
-          return '#e67e22';
+  getColor(place) {
+    switch (place) {
+      case 'Bangalore':
+        return '#2ecc71';
+      case 'Noida':
+        return '#2980b9';
+      case 'Delhi':
+        return '#e67e22';
     }
   }
-
 
   students = [
     {

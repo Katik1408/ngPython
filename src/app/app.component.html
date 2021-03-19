@@ -51,7 +51,7 @@
 -->
 <div *customIf="isActive">
   <h1>User is Active</h1>
-</div> 
+</div>
 <!--
 
   #elseblock is known as Template Variable
@@ -96,3 +96,71 @@
   <mat-icon>delete</mat-icon>
 </button> -->
 <!-- <div class="category"></div> -->
+
+<!--
+  Pipes
+-->
+
+<!--
+  Currency Pipe
+  Date Pipe
+  Decimal Pipe
+  JSON Pipe
+  Lowercase Pipe
+  Uppercase Pipe
+  Percent Pipe
+  Slice Pipe
+  Async Pipe
+-->
+
+<!--
+  Currency Pipe
+-->
+
+{{ 12.34 | currency: "EUR" }}
+
+<br />
+<!--
+  Date Pipe
+-->
+
+{{ dateValue | date: "d/M/y" }}
+
+<br />
+<!--
+  Decimal Pipe
+  minIntegerDigits.minFractionDigits-MaxFractionDigits
+-->
+{{ 9344.1276 | number: "1.2-2" }}
+<br />
+
+<!--
+  JSON Pipe
+-->
+
+{{ student | json }}
+
+<br />
+
+<!--
+  lowercase & Uppercase Pipe
+-->
+
+{{ "ANGULAR" | lowercase }} <br />
+{{ "angular" | uppercase }} <br />
+
+<!--
+  Percent Pipe
+-->
+
+{{ 0.12678 | percent }}
+<br />
+{{ 0.45326 | percent: "2.1-2" }}
+
+<!--
+  Slice Pipe
+-->
+<br />
+{{ [1, 2, 3, 4, 5] | slice: 1:4 }}
+
+<!--0.12678 * 100 ==> 13-->

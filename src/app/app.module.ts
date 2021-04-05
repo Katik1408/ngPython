@@ -36,6 +36,7 @@ import { CustomIfDirective } from 'src/app/cutomdirective/customIf.directive';
     RatingModule.forRoot(),
     MatButtonModule,
     ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

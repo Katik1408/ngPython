@@ -15,6 +15,7 @@ import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component'
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import { BackgDirective } from 'src/app/cutomdirective/backg.directive';
 import { CustomIfDirective } from 'src/app/cutomdirective/customIf.directive';
+import { SiblingComponent } from './sibling/sibling.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { CustomIfDirective } from 'src/app/cutomdirective/customIf.directive';
     TemplateDrivenComponent,
     BackgDirective,
     CustomIfDirective,
+    SiblingComponent,
   ],
   imports: [
     BrowserModule,

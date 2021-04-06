@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./child.component.css'],
 })
 export class ChildComponent implements OnInit {
-  @Input() notify;
+  @Input() notify : any;
   username: string;
   @Output() userNameEmitter = new EventEmitter<string>();
   constructor() {}
